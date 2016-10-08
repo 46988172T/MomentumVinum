@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<!--
+  ~ Copyright (c) 2016.  - MomentumVinum.com
+  -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.21696035242290748" layoutX="2.0" layoutY="79.0" prefHeight="507.0" prefWidth="903.0">
+        <items>
+          <AnchorPane fx:id="panel_izquierdo" prefHeight="584.0" prefWidth="308.0" />
+          <AnchorPane fx:id="panel_derecho" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.3533980582524272" layoutX="-5.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="517.0" prefWidth="708.0">
+                    <items>
+                      <AnchorPane fx:id="panel_superior" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TableView fx:id="tabla_productos" prefHeight="181.0" prefWidth="708.0">
+                                <columns>
+                                  <TableColumn fx:id="columna_id" prefWidth="40.0" text="ID" />
+                                  <TableColumn fx:id="columna_nombre" prefWidth="338.0" text="Nombre" />
+                                    <TableColumn fx:id="columna_tipo" prefWidth="91.0" text="Tipo" />
+                                    <TableColumn fx:id="columna_precio_venta" prefWidth="115.0" text="Precio Tienda" />
+                                    <TableColumn fx:id="columna_precio_mayorista" prefWidth="123.0" text="Precio Mayorista" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="panel_inferior" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Text layoutX="37.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producto:" wrappingWidth="66.13671875" />
+                              <ImageView fitHeight="229.0" fitWidth="165.0" layoutX="37.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <ImageView fitHeight="85.0" fitWidth="249.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@propuesta-app.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="642.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="75.0" text="Nuevo" />
+      <Button layoutX="732.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="75.0" text="Guardar" />
+      <Button layoutX="821.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="75.0" text="Salir" />
+   </children>
+</AnchorPane>
